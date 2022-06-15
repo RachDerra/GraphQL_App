@@ -3,7 +3,7 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    field :blog, BlogType, null: false,
+    field :blog, BlogType, null: false
     def blog
       context[:blog]
     end
